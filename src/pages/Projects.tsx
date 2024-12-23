@@ -59,7 +59,7 @@ const Projects = () => {
       <section className="w-screen bg-gradient-to-r from-orange-500 to-red-600 text-white py-20">
         <div className="container mx-auto text-center">
           <h1 className="text-5xl font-bold mb-4">Our Projects</h1>
-          <p className="text-xl">Innovative solutions transforming the real estate industry</p>
+          <p className="text-xl">Innovative solutions transforming the industry</p>
         </div>
       </section>
 
