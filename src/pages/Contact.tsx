@@ -1,4 +1,40 @@
+import { useState } from "react";
+
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Normally, you'd send this data to an API, but here we simulate the success message.
+    // After form submission, show success message.
+    setIsSubmitted(true);
+
+    // Reset the form after submission
+    setFormData({
+      name: "",
+      email: "",
+      message: "",
+    });
+    
+    // Optionally, hide the success message after a few seconds
+    setTimeout(() => {
+      setIsSubmitted(false);
+    }, 10000);
+  };
+
   return (
     <div className="space-y-0">
       {/* Contact Intro Section */}
@@ -16,7 +52,7 @@ const Contact = () => {
             {/* Contact Form */}
             <div className="bg-white p-8 rounded-lg shadow-md">
               <h2 className="text-2xl font-semibold mb-6">Send us a message</h2>
-              <form className="space-y-4">
+              <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
                   <label htmlFor="name" className="block mb-1 font-medium">
                     Name
@@ -27,6 +63,8 @@ const Contact = () => {
                     name="name"
                     className="w-full p-2 border rounded"
                     required
+                    value={formData.name}
+                    onChange={handleChange}
                   />
                 </div>
                 <div>
@@ -39,6 +77,8 @@ const Contact = () => {
                     name="email"
                     className="w-full p-2 border rounded"
                     required
+                    value={formData.email}
+                    onChange={handleChange}
                   />
                 </div>
                 <div>
@@ -51,6 +91,8 @@ const Contact = () => {
                     rows={4}
                     className="w-full p-2 border rounded"
                     required
+                    value={formData.message}
+                    onChange={handleChange}
                   ></textarea>
                 </div>
                 <button
@@ -60,6 +102,13 @@ const Contact = () => {
                   Send Message
                 </button>
               </form>
+
+              {/* Success Message */}
+              {isSubmitted && (
+                <div className="mt-4 text-green-500 font-semibold text-center text-lg">
+                  Your message has been sent successfully!
+                </div>
+              )}
             </div>
 
             {/* Office Information */}
