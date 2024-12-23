@@ -21,7 +21,11 @@ const Contact = () => {
     
     // Simulate form submission success
     setIsSubmitted(true);
-
+    setFormData({
+      name: "",
+      email: "",
+      message: "",
+    });
     // Hide the success message after 10 seconds
     setTimeout(() => {
       setIsSubmitted(false);
