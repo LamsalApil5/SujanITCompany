@@ -68,7 +68,7 @@ const Layout = () => {
         <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {/* Footer Menu */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+            <h3 className="text-lg font-semibold mb-2 underline">Quick Links</h3>
             <ul className="space-y-2">
               <li>
                 <Link to="/" className="hover:underline text-white">
@@ -95,15 +95,15 @@ const Layout = () => {
 
           {/* Contact Details */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
-            <p>Phone: (123) 456-7890</p>
-            <p>Email: contact@budgethomes.com</p>
-            <p>Address: 123 Tech Street, Silicon Valley, CA</p>
+            <h3 className="text-lg font-semibold mb-2  gap-2 underline">Contact Us</h3>
+            <p>Phone: (+977) 9845617890</p>
+            <p>Email: contact@budgethomesprivate.com</p>
+            <p>Address: M8RR+VWJ Budget Homes Pvt.Ltd, Kathmandu 44600, Np</p>
           </div>
 
           {/* Social Media Links (Optional) */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
+            <h3 className="text-lg font-semibold  mb-2 gap-4 underline">Follow Us</h3>
             <ul className="space-y-2">
               <li>
                 <a href="#" className="hover:underline text-white">
@@ -130,7 +130,7 @@ const Layout = () => {
 
           {/* About Section (Optional) */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">About Us</h3>
+            <h3 className="text-lg font-semibold mb-2 underline">About Us</h3>
             <p>
               We specialize in providing innovative tech solutions for the real
               estate industry, helping businesses thrive in a digital-first
@@ -140,7 +140,7 @@ const Layout = () => {
         </div>
         <hr className="mt-6" />
         <div className="text-center mt-6">
-          <p>&copy; 2023 Budget Homes Private Tech. All rights reserved.</p>
+          <p>&copy; 2023 Budget Homes Private. All rights reserved.</p>
         </div>
       </footer>
     </div>

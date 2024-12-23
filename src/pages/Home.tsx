@@ -1,23 +1,24 @@
 import { Link } from "react-router-dom";
-import image from "../images/Consulting.jpg"
+import image from "../images/Consulting.jpg";
 const Home = () => {
   return (
     <div className="space-y-0">
       <section
         className="h-screen bg-gradient-to-r from-orange-500 to-red-600 text-white py-20 bg-cover bg-center"
         style={{
-            backgroundImage: `url(${image})`, // Corrected background image syntax
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-          }}
+          backgroundImage: `url(${image})`, // Corrected background image syntax
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
       >
         <div className="container mx-auto text-center flex flex-col items-center justify-center h-full">
           <div className="animate-slide-in">
             <h1 className="text-5xl font-bold mb-4">
-              Welcome to Budget Homes Private Tech
+              Welcome to Budget Homes IT Solutions
             </h1>
             <p className="text-xl mb-8">
-              Innovative IT solutions for the real estate industry
+              Empowering industries with cutting-edge technology and innovative
+              IT solutions.
             </p>
             <Link
               to="/contact"
@@ -29,7 +30,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="h-screen bg-white py-20">
+      <section className=" bg-white py-20">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12 text-red-400">
             Our Expertise
@@ -40,6 +41,12 @@ const Home = () => {
               "Web Application Design",
               "Mobile App Development",
               "Cloud Solutions",
+              "UI/UX Design",
+              "Enterprise Solutions",
+              "Database Management",
+              "AI & Machine Learning Solutions",
+              "Blockchain Development",
+              "DevOps & Automation",
             ].map((item, index) => (
               <div
                 key={index}
@@ -67,6 +74,12 @@ const Home = () => {
               "Cutting-edge Technology",
               "Cost-effective Solutions",
               "Dedicated Support",
+              "Customer-centric Approach",
+              "Proven Track Record",
+              "Scalability & Flexibility",
+              "Innovative Solutions",
+              "Expert Team",
+              "Timely Delivery",
             ].map((item, index) => (
               <div key={index} className="border border-white p-6 rounded-lg">
                 <h3 className="text-xl font-semibold mb-2 text-white">
@@ -81,13 +94,23 @@ const Home = () => {
 
       <section className="h-screen bg-white py-20">
         <div className="container mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-8 text-orange-600">Our Clients</h2>
+          <h2 className="text-3xl font-bold mb-8 text-orange-600">
+            Our Clients
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               "Real Estate Agencies",
               "Property Management Firms",
               "Construction Companies",
               "Individual Homeowners",
+              "Commercial Property Owners",
+              "Architectural Firms",
+              "Interior Designers",
+              "Government Agencies",
+              "Real Estate Developers",
+              "Investment Firms",
+              "Hospitality Industry",
+              "Retail Chains",
             ].map((item, index) => (
               <div
                 key={index}
