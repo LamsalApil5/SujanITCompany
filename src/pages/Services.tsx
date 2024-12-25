@@ -1,11 +1,16 @@
 import { useState } from "react";
+import CloudSolution from "../images/CloudSolution.jpeg"
+import CustomSoftwareDevelopment from "../images/CustomSoftwareDevelopment.png"
+import MobileApp from "../images/MobileApp.jpg"
+import webApplication from "../images/webApplication.png"
+
 
 const services = [
   {
     title: "Custom Software Development",
     description:
       "We create bespoke software solutions tailored to your business requirements, empowering you to streamline operations and improve efficiency. Our software is scalable, secure, and optimized to fit your needs.",
-    image: "https://www.pexels.com/photo/data-codes-through-eyeglasses-577585/", // Replace with actual image URL
+    image: CustomSoftwareDevelopment, // Replace with actual image URL
     details: [
       "Comprehensive requirements gathering and analysis to understand business challenges",
       "Tailored design and architecture for optimal system performance",
@@ -17,7 +22,7 @@ const services = [
     title: "Web Application Design",
     description:
       "We design and develop intuitive, responsive web applications that provide seamless user experiences across all devices. Our web apps are optimized for performance, security, and scalability.",
-    image: "https://www.pexels.com/photo/data-codes-through-eyeglasses-577585/", // Replace with actual image URL
+    image: webApplication, // Replace with actual image URL
     details: [
       "User experience (UX) design focused on intuitive navigation and aesthetic appeal",
       "Responsive front-end development for compatibility with mobile, tablet, and desktop devices",
@@ -29,7 +34,7 @@ const services = [
     title: "Mobile App Development",
     description:
       "Our team creates mobile applications for both iOS and Android platforms. We offer cross-platform development as well as native applications designed for enhanced functionality and integration with device features.",
-    image: "/path-to-your-image/mobile-app-development.jpg", // Replace with actual image URL
+    image: MobileApp,
     details: [
       "Expert development in both native and cross-platform frameworks, including React Native and Flutter",
       "UI/UX design that aligns with the platform-specific guidelines for an immersive experience",
@@ -41,7 +46,7 @@ const services = [
     title: "Cloud Solutions",
     description:
       "We offer scalable, secure, and cost-effective cloud solutions to optimize your business processes. From cloud migration to infrastructure management, we ensure your data is secure and always accessible.",
-    image: "/path-to-your-image/cloud-solutions.jpg", // Replace with actual image URL
+    image: CloudSolution, // Replace with actual image URL
     details: [
       "Cloud migration strategies to seamlessly move your data and services to the cloud",
       "Scalable infrastructure setup to accommodate future growth and demand fluctuations",

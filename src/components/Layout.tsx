@@ -32,7 +32,7 @@ const Layout = () => {
             <img
               src={logo} // Use the imported logo here
               alt="Budget Homes Private Tech Logo"
-              className="w-20 object-contain mr-2 bg-transparent" 
+              className="w-20 object-contain mr-2 bg-transparent"
             />
           </Link>
           <ul className="flex space-x-4 text-lg">
@@ -68,7 +68,9 @@ const Layout = () => {
         <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {/* Footer Menu */}
           <div>
-            <h3 className="text-lg font-semibold mb-2 underline">Quick Links</h3>
+            <h3 className="text-lg font-semibold mb-2 underline">
+              Quick Links
+            </h3>
             <ul className="space-y-2">
               <li>
                 <Link to="/" className="hover:underline text-white">
@@ -95,7 +97,9 @@ const Layout = () => {
 
           {/* Contact Details */}
           <div>
-            <h3 className="text-lg font-semibold mb-2  gap-2 underline">Contact Us</h3>
+            <h3 className="text-lg font-semibold mb-2  gap-2 underline">
+              Contact Us
+            </h3>
             <p>Phone: (+977) 9816632790</p>
             <p>Email: admin@budgethomesprivate.com</p>
             <p>Address: M8RR+VWJ Budget Homes Pvt.Ltd, Kathmandu 44600, Np</p>
@@ -103,7 +107,9 @@ const Layout = () => {
 
           {/* Social Media Links (Optional) */}
           <div>
-            <h3 className="text-lg font-semibold  mb-2 gap-4 underline">Follow Us</h3>
+            <h3 className="text-lg font-semibold  mb-2 gap-4 underline">
+              Follow Us
+            </h3>
             <ul className="space-y-2">
               <li>
                 <a href="#" className="hover:underline text-white">
@@ -132,9 +138,12 @@ const Layout = () => {
           <div>
             <h3 className="text-lg font-semibold mb-2 underline">About Us</h3>
             <p>
-              We specialize in providing innovative tech solutions for the real
-              estate industry, helping businesses thrive in a digital-first
-              world.
+              we specialize in delivering innovative tech solutions that help
+              businesses succeed in a digital-first world. Our services,
+              including custom software development, web and mobile apps, and
+              cloud solutions, are tailored to meet the unique needs of each
+              client. We focus on driving digital transformation to ensure
+              businesses not only adapt but thrive in the future.
             </p>
           </div>
         </div>
