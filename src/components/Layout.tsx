@@ -100,7 +100,7 @@ const Layout = () => {
             <h3 className="text-lg font-semibold mb-2  gap-2 underline">
               Contact Us
             </h3>
-            <p>Phone: (+977) 9816632790</p>
+            <p>Phone: (+977) 9806632790</p>
             <p>Email: admin@budgethomesprivate.com</p>
             <p>Address: M8RR+VWJ Budget Homes Pvt.Ltd, Kathmandu 44600, Np</p>
           </div>
